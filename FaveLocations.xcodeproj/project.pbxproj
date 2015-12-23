@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DAEA5071C2A46EF00A130A3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAEA5061C2A46EF00A130A3 /* TableViewController.swift */; };
+		7DAEA5091C2A491300A130A3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DAEA5081C2A491300A130A3 /* MapKit.framework */; };
 		7DE852ED1C2A4074001C706C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE852EC1C2A4074001C706C /* AppDelegate.swift */; };
 		7DE852EF1C2A4074001C706C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE852EE1C2A4074001C706C /* ViewController.swift */; };
 		7DE852F21C2A4074001C706C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE852F01C2A4074001C706C /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7DAEA5061C2A46EF00A130A3 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		7DAEA5081C2A491300A130A3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7DE852E91C2A4074001C706C /* FaveLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaveLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE852EC1C2A4074001C706C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DE852EE1C2A4074001C706C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DAEA5091C2A491300A130A3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 		7DE852E01C2A4074001C706C = {
 			isa = PBXGroup;
 			children = (
+				7DAEA5081C2A491300A130A3 /* MapKit.framework */,
 				7DE852EB1C2A4074001C706C /* FaveLocations */,
 				7DE853001C2A4074001C706C /* FaveLocationsTests */,
 				7DE8530B1C2A4074001C706C /* FaveLocationsUITests */,
@@ -100,6 +106,7 @@
 				7DE852EC1C2A4074001C706C /* AppDelegate.swift */,
 				7DE852EE1C2A4074001C706C /* ViewController.swift */,
 				7DE852F01C2A4074001C706C /* Main.storyboard */,
+				7DAEA5061C2A46EF00A130A3 /* TableViewController.swift */,
 				7DE852F31C2A4074001C706C /* Assets.xcassets */,
 				7DE852F51C2A4074001C706C /* LaunchScreen.storyboard */,
 				7DE852F81C2A4074001C706C /* Info.plist */,
@@ -193,6 +200,11 @@
 				TargetAttributes = {
 					7DE852E81C2A4074001C706C = {
 						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					7DE852FC1C2A4074001C706C = {
 						CreatedOnToolsVersion = 7.2;
@@ -257,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DE852EF1C2A4074001C706C /* ViewController.swift in Sources */,
+				7DAEA5071C2A46EF00A130A3 /* TableViewController.swift in Sources */,
 				7DE852ED1C2A4074001C706C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +497,7 @@
 				7DE853131C2A4074001C706C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DE853141C2A4074001C706C /* Build configuration list for PBXNativeTarget "FaveLocationsTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +506,7 @@
 				7DE853161C2A4074001C706C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DE853171C2A4074001C706C /* Build configuration list for PBXNativeTarget "FaveLocationsUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +515,7 @@
 				7DE853191C2A4074001C706C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
